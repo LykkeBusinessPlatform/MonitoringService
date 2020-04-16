@@ -78,7 +78,7 @@ namespace Lykke.MonitoringServiceApiCaller
                         return;
                     }
 
-                    if (monitoringRegistration.Url != _missingEnvVarUrl)
+                    if (monitoringRegistration.Url != MissingEnvVarUrl)
                     {
                         log.WriteMonitor(
                             "Auto-registration in monitoring",
@@ -177,7 +177,7 @@ namespace Lykke.MonitoringServiceApiCaller
                     var instanceTag = string.IsNullOrEmpty(podTag) ? Guid.NewGuid().ToString() : podTag;
                     myMonitoringName = $"{myMonitoringName}-{instanceTag}";
                 }
-                catch (HttpOperationException)
+                catch
                 {
                     //Duplicated registration is not found - proceed with usual registration
                 }

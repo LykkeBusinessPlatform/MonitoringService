@@ -21,6 +21,7 @@ namespace MonitoringService.Test
         Mock<IApiMonitoringObjectRepository> _mockApiMonitoringObjectRepository;
         Mock<IApiHealthCheckErrorRepository> _mockApiHealthCheckErrorRepository;
         Mock<IIsAliveService> _mockIsAliveService;
+        Mock<INotifyingLimitSettings> _notifyingLimitSettings;
         Mock<ILog> _mockLogger;
 
         public int ExpirationDateInSeconds = 60;
@@ -33,6 +34,7 @@ namespace MonitoringService.Test
             _mockApiMonitoringObjectRepository = new Mock<IApiMonitoringObjectRepository>();
             _mockApiHealthCheckErrorRepository = new Mock<IApiHealthCheckErrorRepository>();
             _mockIsAliveService = new Mock<IIsAliveService>();
+            _notifyingLimitSettings = new Mock<INotifyingLimitSettings>();
             _mockLogger = new Mock<ILog>();
         }
 
@@ -219,6 +221,7 @@ namespace MonitoringService.Test
                 _mockBaseSettings.Object,
                 _mockApiHealthCheckErrorRepository.Object,
                 _mockIsAliveService.Object,
+                _notifyingLimitSettings.Object,
                 _mockLogger.Object);
         }
     }
