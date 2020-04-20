@@ -68,6 +68,7 @@ namespace MonitoringService
 
                 var settings = settingsManager.CurrentValue;
                 services.AddSingleton<IBaseSettings>(settings.MonitoringService);
+                services.AddSingleton<INotifyingLimitSettings, NotifyingLimitSettings>();
 
                 services.RegisterAzureStorages(settingsManager, Log);
                 services.RegDependencies();
