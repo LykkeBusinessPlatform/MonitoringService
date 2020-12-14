@@ -2,19 +2,19 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Authors>Lykke</Authors>
-    <Company>Lykke</Company>
-    <PackageId>Lykke.MonitoringServiceApiCaller</PackageId>
-    <Product>Lykke.MonitoringServiceApiCaller</Product>
-    <PackageLicenseUrl>https://github.com/LykkeCity/MonitoringService/blob/master/LICENSE</PackageLicenseUrl>
-    <Copyright>Lykke 2017</Copyright>
+    <Authors>Lykke Business</Authors>
+    <Company>Lykke Business</Company>
+    <PackageId>LykkeBiz.MonitoringServiceApiCaller</PackageId>
+    <Product>LykkeBiz.MonitoringServiceApiCaller</Product>
+    <PackageLicenseUrl>https://github.com/LykkeBusinessPlatform/MonitoringService/blob/master/LICENSE</PackageLicenseUrl>
+    <Copyright>Lykke Business 2020</Copyright>
     <NeutralLanguage>en-001</NeutralLanguage>
-    <PackageTags>Lykke Monitoring Service MonitoringService</PackageTags>
-    <RepositoryUrl>https://github.com/LykkeCity/MonitoringService</RepositoryUrl>
-    <PackageProjectUrl>https://github.com/LykkeCity/MonitoringService</PackageProjectUrl>
+    <PackageTags>Lykke Business Monitoring Service MonitoringService</PackageTags>
+    <RepositoryUrl>https://github.com/LykkeBusinessPlatform/MonitoringService</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/LykkeBusinessPlatform/MonitoringService</PackageProjectUrl>
     <PackageIconUrl>https://avatars3.githubusercontent.com/u/14153330?v=3&amp;s=200</PackageIconUrl>
     <Description>Api service for health check.</Description>
-    <AssemblyName>Lykke.MonitoringServiceApiCaller</AssemblyName>
+    <AssemblyName>LykkeBiz.MonitoringServiceApiCaller</AssemblyName>
     <RootNamespace>Lykke.MonitoringServiceApiCaller</RootNamespace>
     <Version>1.0.1</Version>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
@@ -31,9 +31,9 @@
 
   <ItemGroup>
     <PackageReference Include="AsyncFriendlyStackTrace" Version="1.6.0" />
-    <PackageReference Include="Lykke.HttpClientGenerator" Version="2.2.0" />
+    <PackageReference Include="LykkeBiz.HttpClientGenerator" Version="4.4.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="2.1.1" />
-    <PackageReference Include="Refit" Version="4.6.30" />
+    <PackageReference Include="Refit" Version="5.2.4" />
   </ItemGroup>
 
 </Project>
