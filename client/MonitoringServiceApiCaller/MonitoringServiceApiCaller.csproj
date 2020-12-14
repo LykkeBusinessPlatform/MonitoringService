@@ -16,7 +16,7 @@
     <Description>Api service for health check.</Description>
     <AssemblyName>LykkeBiz.MonitoringServiceApiCaller</AssemblyName>
     <RootNamespace>Lykke.MonitoringServiceApiCaller</RootNamespace>
-    <Version>1.0.1</Version>
+    <Version>2.1.0</Version>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <RepositoryType>git</RepositoryType>
   </PropertyGroup>
